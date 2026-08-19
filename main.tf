@@ -86,7 +86,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "terrajenkinsproject123456"
+  bucket = "terrajenkinsproject123456789"
 }
 
 resource "aws_iam_user" "seven" {
@@ -97,7 +97,7 @@ name = each.value
 variable "user_names" {
 description = "*"
 type = set(string)
-default = ["user1", "user2", "user3", "user4"]
+default = ["user11", "user22", "user33", "user44"]
 }
 
 resource "aws_ebs_volume" "eight" {
