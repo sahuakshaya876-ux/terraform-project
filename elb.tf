@@ -1,5 +1,5 @@
 resource "aws_elb" "bar" {
-  name               = "akshaya-terraform-elb"
+  name               = "akshaya-terraform-elb33"
   availability_zones = ["ap-south-1a", "ap-south-1b"]
 
  security_groups = [aws_security_group.five.id]
@@ -23,7 +23,7 @@ resource "aws_elb" "bar" {
   cross_zone_load_balancing = true
   idle_timeout              = 400
   tags = {
-    Name = "akshaya-tf-elb"
+    Name = "akshaya-tf-elb-123"
   }
 }
 
