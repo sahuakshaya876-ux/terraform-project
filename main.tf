@@ -62,7 +62,7 @@ resource "aws_instance" "four" {
 }
 
 resource "aws_security_group" "five" {
-  name = "elb-sg1243"
+  name = "elb-sg12435895"
   ingress {
     from_port   = 22
     to_port     = 22
@@ -86,7 +86,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "terrajenkinsproject123456789"
+  bucket = "terrajenkinsproject12345678934"
 }
 
 resource "aws_iam_user" "seven" {
@@ -97,13 +97,13 @@ name = each.value
 variable "user_names" {
 description = "*"
 type = set(string)
-default = ["user11", "user22", "user33", "user44"]
+default = ["user111", "user222", "user333", "user444"]
 }
 
 resource "aws_ebs_volume" "eight" {
  availability_zone = "ap-south-1a"
   size = 40
   tags = {
-    Name = "ebs-1012"
+    Name = "ebs-10124"
   }
 }
