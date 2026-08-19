@@ -62,7 +62,7 @@ resource "aws_instance" "four" {
 }
 
 resource "aws_security_group" "five" {
-  name = "elb-sg123"
+  name = "elb-sg1243"
   ingress {
     from_port   = 22
     to_port     = 22
@@ -104,6 +104,6 @@ resource "aws_ebs_volume" "eight" {
  availability_zone = "ap-south-1a"
   size = 40
   tags = {
-    Name = "ebs-101"
+    Name = "ebs-1012"
   }
 }
