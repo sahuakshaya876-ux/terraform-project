@@ -13,8 +13,7 @@ resource "aws_instance" "one" {
 #!/bin/bash
 sudo -i
 yum install httpd -y
-systemctl start httpd
-chkconfig httpd on
+systemctl enable --now httpd
 echo "hai all this is my app created by terraform infrastructurte by raham sir server-1" > /var/www/html/index.html
 EOF
   tags = {
@@ -32,8 +31,7 @@ resource "aws_instance" "two" {
 #!/bin/bash
 sudo -i
 yum install httpd -y
-systemctl start httpd
-chkconfig httpd on
+systemctl enable --now httpd
 echo "hai all this is my website created by terraform infrastructurte by raham sir server-2" > /var/www/html/index.html
 EOF
   tags = {
