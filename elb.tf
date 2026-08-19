@@ -2,6 +2,8 @@ resource "aws_elb" "bar" {
   name               = "akshaya-terraform-elb"
   availability_zones = ["ap-south-1a", "ap-south-1b"]
 
+ security_groups = [aws_security_group.five.id]
+
   listener {
     instance_port     = 80
     instance_protocol = "http"
